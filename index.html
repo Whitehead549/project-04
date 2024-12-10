@@ -337,6 +337,58 @@
                 </div>
             </div>
         </div>
+          
+        <div id="image-container">
+            <!-- Image 1 -->
+            <img src="./image/forex.png" alt="Image 1">
+            <!-- Image 2 -->
+            <img src="./image/giver.jpg" alt="Image 2">
+          </div>
+          
+          <style>
+            /* General styles for the container and images */
+            #image-container {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 16px;
+              padding: 16px;
+            }
+          
+            #image-container img {
+              width: 100%;
+              max-width: 400px; /* Default max width */
+              height: auto;
+              object-fit: contain;
+            }
+          
+            /* Desktop and tablet styles */
+            @media (min-width: 768px) {
+              #image-container {
+                flex-direction: row; /* Side-by-side layout */
+                gap: 12rem; /* Professional spacing between images */
+              }
+          
+              #image-container img {
+                max-width: 500px; /* Increase image size for desktop */
+              }
+            }
+          
+            /* Mobile styles */
+            @media (max-width: 767px) {
+              #image-container {
+                flex-direction: column; /* Stacked layout */
+                gap: 16px; /* Default spacing for mobile */
+              }
+          
+              #image-container img {
+                max-width: 100%; /* Ensure full width for smaller screens */
+              }
+            }
+          </style>
+          
+            
         
         <footer style="background: #2c3e50; color: #fff; padding: 30px 20px; font-family: Arial, sans-serif;">
             <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; max-width: 1200px; margin: 0 auto;">
