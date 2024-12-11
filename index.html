@@ -373,25 +373,21 @@
     }
 
     .investment-level-card h6 {
-        font-size: 1.25rem;
+        font-size: 1rem; /* Smaller heading size */
         font-weight: bold;
-        color: #000000;
+        color: #000000; /* Black color */
         margin-bottom: 10px;
     }
 
     .investment-level-card p {
         margin: 5px 0;
-        font-weight: bold;
-        color: #34495e;
+        font-size: 0.875rem; /* Smaller text size */
+        color: #000000; /* Black color */
+        font-weight: normal;
     }
 
     .investment-level-card p:last-of-type {
-        font-weight: normal;
-        color: #7f8c8d;
-    }
-
-    .card-button {
-        margin-top: auto;
+        color: #7f8c8d; /* Optional subtle variation for last paragraph */
     }
 
     .investment-level-card button {
@@ -401,6 +397,12 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        align-self: center; /* Center button horizontally */
+        margin-top: auto; /* Push the button to the bottom of the card */
+    }
+
+    .investment-level-card button:hover {
+        background: #217dbb; /* Darker shade on hover */
     }
 
     .investment-level-card button a {
@@ -429,6 +431,7 @@
         }
     }
 </style>
+
 
             
         </div>
