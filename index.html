@@ -308,37 +308,129 @@
                 <h2 style="font-size: 1.5rem; font-weight: bold; color: #000;">INVESTMENT PLANS</h2>
             </div>
         
-            <div class="investment-level" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
-                <div class="investment-level-beginner" style="flex: 1; min-width: 250px; max-width: 300px; background: #f8f9fa; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <h6 style="font-size: 1.25rem; font-weight: bold; color: #000000;">BEGINNERS PLAN</h6>
-                    <p style="margin: 10px 0; font-weight: bold; color: #34495e;">Minimum Deposit: $100</p>
-                    <p style="margin: 10px 0; font-weight: bold; color: #34495e;"> Expected Returns: 100%</p>
-                    <p style="margin: 10px 0; color: #7f8c8d;">Duration: 10 Days</p>     
-                    <button style="padding: 10px 20px; background: #3498db; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
-                        <a href="https://dashboard.selmabriggswilson.xyz/" style="text-decoration: none; color: #fff;">Get Started</a>
-                    </button>
-                </div>
-        
-                <div class="investment-level-advance" style="flex: 1; min-width: 250px; max-width: 300px; background: #f8f9fa; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <h6 style="font-size: 1.25rem; font-weight: bold; color: #000000;">ADVANCED PLAN</h6>    
-                    <p style="margin: 10px 0; font-weight: bold; color: #34495e;">Minimum Deposit: $1,000</p>
-                    <p style="margin: 10px 0; font-weight: bold; color: #34495e;">Expected Returns: 300%</p>
-                    <p style="margin: 10px 0; color: #7f8c8d;">Duration: 15 Days</p>
-                    <button style="padding: 10px 20px; background: #3498db; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
-                        <a href="https://dashboard.selmabriggswilson.xyz/" style="text-decoration: none; color: #fff;">Get Started</a>
-                    </button>
-                </div>
-        
-                <div class="investment-level-professional" style="flex: 1; min-width: 250px; max-width: 300px; background: #f8f9fa; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <h6 style="font-size: 1.25rem; font-weight: bold; color: #000000;">PREMIUM PLAN</h6>         
-                    <p style="margin: 10px 0; font-weight: bold; color: #34495e;"> Minimum Deposit: $10,000</p>
-                    <p style="margin: 10px 0; font-weight: bold; color: #34495e;">Expected Returns: 500% </p>
-                    <p style="margin: 10px 0; color: #7f8c8d;">Duration: 20 Days</p>
-                    <button style="padding: 10px 20px; background: #3498db; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
-                        <a href="https://dashboard.selmabriggswilson.xyz/" style="text-decoration: none; color: #fff;">Get Started</a>
-                    </button>
-                </div>
-            </div>
+            <div class="investment-level">
+    <div class="investment-level-card">
+        <h6>BEGINNERS PLAN</h6>
+        <p>Minimum Deposit: $100</p>
+        <p>Expected Returns: 100%</p>
+        <p>Duration: 10 Days</p>
+        <div class="card-button">
+            <button>
+                <a href="https://dashboard.selmabriggswilson.xyz/">Get Started</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="investment-level-card">
+        <h6>ADVANCED PLAN</h6>
+        <p>Minimum Deposit: $1,000</p>
+        <p>Expected Returns: 300%</p>
+        <p>Duration: 15 Days</p>
+        <div class="card-button">
+            <button>
+                <a href="https://dashboard.selmabriggswilson.xyz/">Get Started</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="investment-level-card">
+        <h6>PREMIUM PLAN</h6>
+        <p>Minimum Deposit: $10,000</p>
+        <p>Expected Returns: 500%</p>
+        <p>Duration: 20 Days</p>
+        <div class="card-button">
+            <button>
+                <a href="https://dashboard.selmabriggswilson.xyz/">Get Started</a>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .investment-level {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 10px;
+        max-width: 1200px; /* Limit the width of the container */
+        margin: 0 auto; /* Center the container */
+    }
+
+    .investment-level-card {
+        flex: 1 1 300px; /* Allow cards to grow/shrink and maintain a base width */
+        min-width: 250px;
+        max-width: 300px;
+        height: 250px;
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .investment-level-card h6 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    .investment-level-card p {
+        margin: 5px 0;
+        font-weight: bold;
+        color: #34495e;
+    }
+
+    .investment-level-card p:last-of-type {
+        font-weight: normal;
+        color: #7f8c8d;
+    }
+
+    .card-button {
+        margin-top: auto;
+    }
+
+    .investment-level-card button {
+        padding: 10px 20px;
+        background: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .investment-level-card button a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+        .investment-level {
+            gap: 10px; /* Reduce gap for smaller screens */
+        }
+        .investment-level-card {
+            flex: 1 1 100%; /* Full width for medium screens */
+            max-width: 100%; /* Ensure no cards exceed container width */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .investment-level {
+            padding: 5px; /* Add padding for very small screens */
+        }
+        .investment-level-card {
+            padding: 15px; /* Adjust padding to fit small screens */
+            height: auto; /* Allow cards to grow in height */
+        }
+    }
+</style>
+
+            
         </div>
         
         <div class="responsive-images-section">
