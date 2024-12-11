@@ -711,6 +711,51 @@ width: 250px;
     text-decoration: none;
 }
 
+/* chart images */
+.responsive-images-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    padding: 0;
+    max-width: 1200px;
+}
+
+.responsive-image-container {
+    flex: 1 1 calc(33.33% - 20px); /* Three images per row on larger screens */
+    max-width: 400px; /* Optional: Limit the max size of each container */
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.responsive-image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .responsive-images-section {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;   /* Center items in the column */
+    }
+
+    .responsive-image-container {
+        flex: 1 1 100%; /* Each image takes full width */
+        max-width: 100%; /* Remove max-width limitation for containers */
+    }
+}
+
 
 /* footer */
 footer {
