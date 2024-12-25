@@ -13,20 +13,7 @@
     <!-- Link to your translate.js -->
     <script src="./translate.js" defer></script>
     
-  <!-- Chatra {literal} -->
-<script>
-    (function(d, w, c) {
-        w.ChatraID = '4vb2GFSsHLBaxvkwM';
-        var s = d.createElement('script');
-        w[c] = w[c] || function() {
-            (w[c].q = w[c].q || []).push(arguments);
-        };
-        s.async = true;
-        s.src = 'https://call.chatra.io/chatra.js';
-        if (d.head) d.head.appendChild(s);
-    })(document, window, 'Chatra');
-</script>
-<!-- /Chatra {/literal} -->
+
 </head>
 
 <body>
@@ -450,41 +437,68 @@
         </div>
         
         
-
-        <footer style="background: #2c3e50; color: #fff; font-family: Arial, sans-serif;">
-            <!-- Centered Container -->
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; max-width: 1200px; padding: 30px; margin: 0 auto; box-sizing: border-box;">
-                <!-- About Section -->
-                <div style="flex: 2; min-width: 300px;">
-                    <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 15px; color: #3498db;">About Me</h3>
-                    <p style="font-size: 1rem; line-height: 1.5; margin: 0;">
-                        Experienced Investment Account Manager with over 8 years of expertise, delivering exceptional returns,
-                         tailored solutions, and personalized service to empower investors' financial success.
-                    </p>
-                </div>
+        <style>
+            /* General styles for the card */
+            .footer-card {
+                background: #2c3e50;
+                color: #fff;
+                border-radius: 10px;
+                padding: 30px;
+                max-width: 1200px;
+                width: 100%;
+                box-sizing: border-box;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                margin: auto;
+                transition: width 0.3s ease; /* Smooth transition for width changes */
+            }
         
-                <!-- Contact Information -->
-                <div style="flex: 1; min-width: 250px;">
-                    <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 15px; color: #3498db;">Contact Information</h4>
-                    <p style="font-size: 1rem; margin: 5px 0 20px;">Address: 2038 Norman Street, Long Beach, CA 90802, United States.</p>
-                    <p style="font-size: 1rem; margin: 5px 0;">Email: support@selmabriggswilson.xyz</p>
-                    <button style="padding: 10px 20px; background: #3498db; color: #fff; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">
-                        <a href="contact.html" style="text-decoration: none; color: #fff; font-weight: bold;">Contact Me</a>
-                    </button>
-                </div>
+            /* Media query for desktop view */
+            @media (min-width: 1024px) {
+                .footer-card {
+                    width: 80%; /* Increase width for desktop */
+                }
+            }
+        </style>
         
-                <!-- Legal Section -->
-                <div style="flex: 1; min-width: 250px;">
-                    <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 15px; color: #3498db;">Legal</h4>
-                    <p style="margin: 5px 0;">
-                        <a href="privacypolicy/privacypolicy.html" style="color: #fff; text-decoration: none; font-size: 1rem;">Privacy Policy</a>
-                    </p>
-                    <p style="margin: 5px 0;">
-                        <a href="termsandconditions.html" style="color: #fff; text-decoration: none; font-size: 1rem;">Terms and Conditions</a>
-                    </p>
+        <footer style="display: flex; justify-content: center; align-items: center; padding: 40px 0px; box-sizing: border-box ;">
+            <!-- Card Container -->
+            <div class="footer-card">
+                <!-- Centered Content -->
+                <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+                    <!-- About Section -->
+                    <div style="flex: 2; min-width: 300px;">
+                        <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 15px; color: #3498db;">About Me</h3>
+                        <p style="font-size: 1rem; line-height: 1.5; margin: 0;">
+                            Experienced Investment Account Manager with over 8 years of expertise, delivering exceptional returns,
+                            tailored solutions, and personalized service to empower investors' financial success.
+                        </p>
+                    </div>
+        
+                    <!-- Contact Information -->
+                    <div style="flex: 1; min-width: 250px;">
+                        <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 15px; color: #3498db;">Contact Information</h4>
+                        <p style="font-size: 1rem; margin: 5px 0 20px;">Address: 2038 Norman Street, Long Beach, CA 90802, United States.</p>
+                        <p style="font-size: 1rem; margin: 5px 0;">Email: support@selmabriggswilson.xyz</p>
+                        <button style="padding: 10px 20px; background: #3498db; color: #fff; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">
+                            <a href="contact.html" style="text-decoration: none; color: #fff; font-weight: bold;">Contact Me</a>
+                        </button>
+                    </div>
+        
+                    <!-- Legal Section -->
+                    <div style="flex: 1; min-width: 250px;">
+                        <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 15px; color: #3498db;">Legal</h4>
+                        <p style="margin: 5px 0;">
+                            <a href="privacypolicy/privacypolicy.html" style="color: #fff; text-decoration: none; font-size: 1rem;">Privacy Policy</a>
+                        </p>
+                        <p style="margin: 5px 0;">
+                            <a href="termsandconditions.html" style="color: #fff; text-decoration: none; font-size: 1rem;">Terms and Conditions</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
+        
+        
         
         
         
