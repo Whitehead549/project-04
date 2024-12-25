@@ -456,26 +456,35 @@
             @media (min-width: 1024px) {
                 .footer-card {
                     width: 80%; /* Increase width for desktop */
+                    padding-left: 70px;
+                }
+            }
+        
+            /* Media query for mobile view */
+            @media (max-width: 767px) {
+                .footer-card {
+                    width: 90%; /* Reduce width for mobile */
+                    padding: 20px; /* Adjust padding for mobile */
                 }
             }
         </style>
         
-        <footer style="display: flex; justify-content: center; align-items: center; padding: 40px 0px; box-sizing: border-box ;">
+        <footer style="display: flex; justify-content: center; align-items: center; padding: 40px 0px; box-sizing: border-box;">
             <!-- Card Container -->
             <div class="footer-card">
                 <!-- Centered Content -->
                 <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
                     <!-- About Section -->
-                    <div style="flex: 2; min-width: 300px;">
+                    <div style="flex: 2; min-width: 300px;  padding-left: 17px;  padding-right: 10px;">
                         <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 15px; color: #3498db;">About Me</h3>
                         <p style="font-size: 1rem; line-height: 1.5; margin: 0;">
-                            Experienced Investment Account Manager with over 8 years of expertise, delivering exceptional returns,
+                            Experienced Investment Account Manager with over 8 years of expertise,  delivering exceptional returns,
                             tailored solutions, and personalized service to empower investors' financial success.
                         </p>
                     </div>
         
                     <!-- Contact Information -->
-                    <div style="flex: 1; min-width: 250px;">
+                    <div style="flex: 1; min-width: 250px;  padding-left: 17px;">
                         <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 15px; color: #3498db;">Contact Information</h4>
                         <p style="font-size: 1rem; margin: 5px 0 20px;">Address: 2038 Norman Street, Long Beach, CA 90802, United States.</p>
                         <p style="font-size: 1rem; margin: 5px 0;">Email: support@selmabriggswilson.xyz</p>
@@ -485,7 +494,7 @@
                     </div>
         
                     <!-- Legal Section -->
-                    <div style="flex: 1; min-width: 250px;">
+                    <div style="flex: 1; min-width: 250px;  padding-left: 17px;">
                         <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 15px; color: #3498db;">Legal</h4>
                         <p style="margin: 5px 0;">
                             <a href="privacypolicy/privacypolicy.html" style="color: #fff; text-decoration: none; font-size: 1rem;">Privacy Policy</a>
@@ -497,6 +506,7 @@
                 </div>
             </div>
         </footer>
+        
         
         
         
