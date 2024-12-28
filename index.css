@@ -424,7 +424,7 @@
 }
 
 
-@media (min-width: 993px) and (max-width: 1245px) {
+@media (min-width: 950px) and (max-width: 1245px) {
     #feature {
         width: 95%;
         padding: 20px;
@@ -951,6 +951,14 @@ width: 250px;
         margin-top: 20px;
         text-align: center;
         font-size: 15px;
+    }
+
+    .feature-section-1, .feature-section-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        width: 100%;
+        justify-items: center;
     }
 
     .feature-section-1 p {
